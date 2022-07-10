@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>{% block title %} Bem vindo a MadaTec Cursos Profissionalizantes! {% endblock %} </h1>
+    <h3>Insira as informações para acesso á área logada!</h3>
+        <form method="POST" action="/autenticar">
+            <input type="hidden" name="proxima" value="{{ proxima or '/'}}">
+            <p><label>Nome de usuário:</label> <input class="form-control" type="text" name="usuario" required></p>
+            <p><label>Senha:</label> <input class="form-control" type="password" name="senha" required></p>
+            <p><button class="btn btn-primary" type="submit">Entrar</button></p>
+        </form>
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>{% block title %} Bem vindo Fulano {% endblock %}</h3>
+<form method="get" action="{{ url_for('pesquisar_aluno') }}"><button type="submit">Consultar Aluno</button></form>
+<p><form method="get" action="{{ url_for('create') }}"><button type="submit">Cadastrar Aluno</button></form></p>
+<form method="get" action="{{ url_for('lista_presença') }}"><button type="submit">Lista Presença</button></form>
+
+{% endblock %}

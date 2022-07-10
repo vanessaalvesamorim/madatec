@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h3>{% block title %} LISTA DE PRESENÇA! {% endblock %} </h3>
+
+ <table border = "1">
+        <tr>
+            <td align= middle width=100 bgcolor= #DAA520> ALUNO </td>
+            <td align= middle width=100 bgcolor= #DAA520> RA DO ALUNO</td>
+            <td align= middle width=100 bgcolor= #DAA520> DATE </td>
+            <td align= middle width=100 bgcolor= #DAA520> STATUS DE PRESENÇA </td>
+        </tr>
+        <tr>
+            {% for aluno in alunos %}
+            <td align= middle width=150>{{ aluno['nome_aluno'] }}</td>
+            <td align= middle width=150>{{ aluno['ra'] }}</td>
+            <td align= middle width=150> </td>
+            <td align= middle width=150> </td>
+            </td>
+        </tr>
+            #{% endfor %}
+ </table>
+{% endblock %}
+
+
+

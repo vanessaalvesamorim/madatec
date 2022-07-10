@@ -1,0 +1,44 @@
+h1{
+color: red;
+text-align: center;
+padding: 18px;
+}
+
+h3{
+color: blue;
+text-align: center;
+padding: 18px;
+}
+
+h4{
+color: red;
+text-align: left;
+}
+
+h5{
+color: black;
+text-align: left;
+}
+
+
+aescola {
+    position: absolute;
+    width: 718px;
+    height: 503px;
+    left: 584px;
+    top: 225px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: justify;
+    color: #1B442C;
+    indent-text: 3mm;
+}
+
+faleconosco {
+    position: absolute;
+    left: 1000px;
+    top: 225px;
+}

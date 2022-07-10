@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3>{% block title %} DETALHES DO ALUNO {% endblock %} </h3>
+
+    <p><label_aluno> NOME: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['nome_aluno'] }}
+    <p><p><label_aluno>RA: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['ra'] }}</p>
+    <p><p><label_aluno>DATA DE NASCIMENTO: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['nascimento'] }} </p>
+    <p><p><label_aluno>SÉRIE: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['num_ser'] }} </p>
+    <p><p><label_aluno>TURMA: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['turma'] }} </p>
+    <p><p><label_aluno>SEXO: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['sexo'] }} </p>
+    <p><p><label_aluno>SITUAÇÃO: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['situacao'] }} </p>
+    <p><p><label_aluno>NOME DA MÃE: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['nome_mae'] }} </p>
+    <p><p><label_aluno>PROFISSÃO DA MÃE: </label_aluno>   <detalhe_aluno>{{ detalhe_aluno['profissao_mae'] }} </p>
+    <p><p><label_aluno>LOCAL DE TRABALHO DA MÃE:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['localtrab_mae'] }} </p>
+    <p><p><label_aluno>DATA DE NASCIMENTO DA MÃE:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['nasc_mae'] }} </p>
+    <p><p><label_aluno>TELEFONE DA MÃE:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['fone_mae'] }} </p>
+    <p><p><label_aluno>NOME DO PAI:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['nome_pai'] }} </p>
+    <p><p><label_aluno>PROFISSÃO DO PAI:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['profissao_pai'] }} </p>
+    <p><p><label_aluno>LOCAL DE TRABALHO DO PAI:</label_aluno>   <detalhe_aluno> detalhe_aluno['localtrab_pai'] }} </p>
+    <p><p><label_aluno>DATA DE NASCIMENTO DO PAI:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['nasc_pai'] }} </p>
+    <p><p><label_aluno>TELEFONE DO PAI:</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['fone_pai'] }} </p>
+    <p><p><label_aluno>DATA DA MATRICULA</label_aluno>   <detalhe_aluno>{{ detalhe_aluno['created'] }} </p>
+
+<br>
+<p><form action="{{ url_for('menu_area_logada') }}"><button type="submit">Cancelar</button></form></p>
+
+
+{% endblock %}
